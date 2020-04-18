@@ -1,0 +1,250 @@
+@font-face {
+ font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: OpenSans, Arial, sans-serif;
+}
+
+.surfase-header {	
+min-width: 1920px;
+min-height:960px;
+
+background-image: url(../images/football_1920.jpg);
+background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #666666;
+  position: relative;
+ }
+
+.surfase-header:after {
+	content: "";
+  background-color: #0a0e34;
+   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0.9;
+}
+
+.container {
+	width: 1558px;
+	padding: 0 15px 0 15px;
+
+	position: relative;
+  z-index: 2;
+  text-align:center;
+
+}
+ 
+
+.header-logo {
+	width: 191px;
+	fill: #ffffff;
+	padding-top: 45px;
+
+	}
+
+.welcome-title {
+	color: #ffffff;
+	font-size: 90px;
+	text-transform: uppercase;
+	position: relative;
+  z-index: 2;
+ 
+}
+
+.download__button {
+	  display: flex;
+	justify-content: center;
+
+}
+
+.download__button_app_store {
+	width: 310px;
+	height: 77px;
+	border: none;
+	    background-color: #5e42b0;
+	    border-radius: 77px;
+
+	    padding-left: 105px;
+	  
+	     padding-right: : 61px; 
+text-align: left;
+	    color: #ffffff;
+	     font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.download__button_app {
+	  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.download__icon_app_store {
+	    width: 42px;
+    height: 48px;
+    fill: #ffffff;
+       position: absolute;
+     left: 40px;
+     top: 10px;
+
+}
+
+.download__button_google_play {
+	width: 310px;
+	height: 77px;
+	border: none;
+	    background-color: #5e42b0;
+	    border-radius: 77px;
+
+	    padding-left: 105px;
+	  
+	     padding-right: : 61px; 
+text-align: left;
+	    color: #ffffff;
+	     font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.download__button_google {
+ position: relative;
+align-items: center;
+margin-left: 50px;	
+}
+.download__icon_google_play {
+	    width: 40px;
+    height: 50px;
+    fill: #ffffff;
+       position: absolute;
+     left: 40px;
+     top: 10px;
+
+}
+
+
+.card_sport {
+	width: 100wh;
+	display: flex;
+justify-content: center;
+}
+
+.card-info-spot {
+	width: 716px;
+padding-left: 50px;
+}
+
+.header-title {
+	font-size: 80px;
+	font-weight: 700;
+	color: #e7e7e7;
+	 margin-top: 50px;
+	 text-transform: uppercase;
+}
+
+.header-card {
+display: flex;
+margin-top: 112px;
+height: 27px;
+align-items: center;
+	
+}
+
+.number-card {
+font-size: 18px;
+color: #000000;
+font-weight: 700;
+position: relative;
+padding-bottom: 8px;
+}
+
+.number-card:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background-color: #5e42b0;
+  width: 19px;
+  bottom: 0;
+   border-radius: 4px;
+
+}
+
+.card-title {
+font-size: 36px;
+color: #c1c1c1;
+text-transform: uppercase;
+margin-left: 19px;
+}
+
+.img_card_sport{
+	width: 568px;
+	margin-top: 28px;
+}
+
+
+.card-content {
+font-size: 20px;
+line-height: 28px;
+margin-top: 32px;	
+}
+
+.card-info-2 {
+background-color: #f6f4fa;
+
+}
+
+.card-info-3 {
+	background-color: #5e42b0;
+}
+
+.number-card-3 {
+font-size: 18px;
+color: #000000;
+font-weight: 700;
+position: relative;
+}
+
+.number-card-3:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background-color: #efefef;
+  width: 19px;
+  bottom: 0;
+ border-radius: 4px;
+}
+
+.card-content-3 {
+font-size: 20px;
+line-height: 28px;
+margin-top: 32px;
+color: #ffffff;	
+}
+
+.card_manual {
+width: 100wh;
+	display: flex;
+	
+}
