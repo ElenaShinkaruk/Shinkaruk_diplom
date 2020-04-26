@@ -18,65 +18,101 @@
   outline: none;
 }
 
-body {
-  font-family: OpenSans, Arial, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.surfase-header {	
-min-width: 1920px;
-min-height:960px;
 
-background-image: url(../images/football_1920.jpg);
-background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #666666;
+
+body {
+  min-width: 320px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+}
+
+svg {
+  fill: #ffffff;
+}
+
+.header-container {
+  width: 94%;
+  max-width: 1530px;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.header,
+.footer {
   position: relative;
- }
+  z-index: 1;
 
-.surfase-header:after {
-	content: "";
+  color: #ffffff;
+
+  background-image: url("../images/football_1920.jpg");
   background-color: #0a0e34;
-   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header::before,
+.footer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
 
+  background-color: #1c1d3f;
   opacity: 0.9;
 }
 
-.container {
-	width: 1558px;
-	padding: 0 15px 0 15px;
+.header-container,
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-	position: relative;
-  z-index: 2;
-  text-align:center;
-
+  min-height: 100vh;
+  padding-top: 4.5vh;
+  padding-bottom: 11.5vh;
 }
- 
 
-.header-logo {
-	width: 191px;
-	fill: #ffffff;
-	padding-top: 45px;
 
+.header-text {
+	width: 200px;
 	}
 
-.welcome-title {
-	color: #ffffff;
-	font-size: 90px;
-	text-transform: uppercase;
-	position: relative;
-  z-index: 2;
- 
+.header-title {
+   width: 100%;
 }
 
-.download__button {
+.header-title .welcome-title {
+  font-size: 90px;
+}
+
+.welcome-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.welcome-title2 {
+  align-self: flex-end;
+  
+}
+
+.header__button {
 	  display: flex;
 	justify-content: center;
-
+	flex-direction: row;
 }
 
 .download__button_app_store {
@@ -144,107 +180,297 @@ margin-left: 50px;
 
 }
 
+section {
+  counter-reset: cnt;
+}
+
+.container-card {
+   width: 47%;
+  max-width: 765px;
+}
+
+.card_sport:nth-child(odd) .container-card {
+    padding-left: 50px;
+  margin-left: 50%;
+}
+
+.card_sport:nth-child(even) .container-card {
+    padding-left: 50px;
+  margin-left: 50%;
+}
 
 .card_sport {
-	width: 100wh;
-	display: flex;
-justify-content: center;
+  padding-top: 110px;
 }
 
-.card-info-spot {
-	width: 716px;
-padding-left: 50px;
+.card_sport:nth-child(even) {
+  overflow: hidden;
 }
 
-.header-title {
-	font-size: 80px;
-	font-weight: 700;
-	color: #e7e7e7;
-	 margin-top: 50px;
-	 text-transform: uppercase;
+
+.card-sport-title {
+   position: relative;
+  margin-bottom: 45px;
+
+  font-size: 80px;
+  color: #e7e7e7;
+  text-transform: uppercase;
 }
 
-.header-card {
-display: flex;
-margin-top: 112px;
-height: 27px;
-align-items: center;
-	
-}
+.card-sport-title::after {
+ position: absolute;
+  z-index: 1;
+  top: -75px;
 
-.number-card {
-font-size: 18px;
-color: #000000;
-font-weight: 700;
-position: relative;
-padding-bottom: 8px;
-}
 
-.number-card:before {
   content: "";
-  position: absolute;
-  height: 5px;
-  background-color: #5e42b0;
-  width: 19px;
-  bottom: 0;
-   border-radius: 4px;
+  display: block;
+  width: 570px;
+  height: 900px;
 
+  background-color: transparent;
+  background-image: url("../images/footballer_566.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0;
+  transform: translateX(-600px) scale(1.05);
+}
+ 
+
+.card_sport:nth-child(2) .card-sport-title::after {
+     top: -75px;
+
+  width: 1000px;
+  height: 815px;
+
+  background-image: url("../images/basketballer_991.png");
+
+  transform: translateX(-50px) scale(1.05);
+}
+
+
+.service {
+ padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.service:nth-child(3n + 3) {
+  background-color: #f5f4f9;
+}
+
+.service:nth-child(3n + 4) {
+  background-color: #5e3db3;
+}
+
+
+.card_sport:nth-child(even) .service:nth-child(3n + 4) {
+  background-color: #0a0e34;
 }
 
 .card-title {
-font-size: 36px;
-color: #c1c1c1;
-text-transform: uppercase;
-margin-left: 19px;
+  position: relative;
+
+  padding-left: 26px;
+  margin-bottom: 28px;
+
+  font-size: 36px;
+  line-height: 1;
+  color: #c1c1c1;
+  text-transform: uppercase;
 }
 
-.img_card_sport{
-	width: 568px;
-	margin-top: 28px;
+.card-title::before {
+  counter-increment: cnt;
+
+  content: counter(cnt, decimal-leading-zero);
+
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  color: #000000;
 }
 
-
-.card-content {
-font-size: 20px;
-line-height: 28px;
-margin-top: 32px;	
-}
-
-.card-info-2 {
-background-color: #f6f4fa;
-
-}
-
-.card-info-3 {
-	background-color: #5e42b0;
-}
-
-.number-card-3 {
-font-size: 18px;
-color: #000000;
-font-weight: 700;
-position: relative;
-}
-
-.number-card-3:before {
+.card-title::after {
   content: "";
   position: absolute;
-  height: 5px;
-  background-color: #efefef;
-  width: 19px;
-  bottom: 0;
- border-radius: 4px;
+  top: 20px;
+  left: 0;
+
+  display: block;
+  width: 20px;
+
+  background-color: #5e3db2;
+  border-top: 2px solid #5e3db3;
+  border-bottom: 2px solid #5e3db3;
+  border-radius: 2px;
 }
 
-.card-content-3 {
-font-size: 20px;
-line-height: 28px;
-margin-top: 32px;
-color: #ffffff;	
+.service:nth-child(3n + 4) .card-title::after {
+  background-color: #fffffe;
+  border-color: #ffffff;
+}
+.service:nth-child(3n + 4) .card-content {
+  color: #ffffff;
+}
+
+
+
+
+.card_manual .container_manual {
+  display: flex;
+  flex-direction: column;
+  max-width: 765px;
+}
+
+.card_manual:nth-child(odd) .container_manual {
+   padding-left: 130px;
+  margin-left: 0;
+}
+
+.card_manual:nth-child(even) .container_manual {
+  padding-right: 130px;
+  margin-right: 0;
 }
 
 .card_manual {
-width: 100wh;
-	display: flex;
-	
+   display: flex;
+  justify-content: center;
+}
+
+
+.img_card_manual .content_manual {
+  width: 50%;
+  max-width: 960px;
+  max-height: 730px;
+  padding: 0;
+}
+
+.img_card_manual img {
+  min-height: 730px;
+
+
+  background-color: #f5f4f9;
+
+}
+
+
+.content_manual {
+ position: relative;
+  padding-top: 233px;
+  padding-bottom: 10px;
+}
+
+.card_manual:nth-child(even) .img_card_manual{
+  order: 2;
+}
+
+.content_manual::before {
+
+ counter-increment: cnt;
+
+  content: counter(cnt, decimal-leading-zero);
+
+  position: absolute;
+  top: 50%;
+  left: -85px;
+  margin-top: -80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 160px;
+
+  background-color: #5e3db3;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5f6f7;
+}
+
+.card_manual:nth-child(even) .content_manual::before {
+   left: calc(100% - 85px);
+}
+
+.content_manual::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 20px);
+  left: -13px;
+
+  display: block;
+  width: 26px;
+
+  background-color: #8f78c9;
+  border-top: 2.5px solid #8f78ca;
+  border-bottom: 2.5px solid #8f78ca;
+  border-radius: 2.5px;
+}
+
+.card_manual:nth-child(even) .content_manual::after {
+  left: calc(100% - 13px);
+}
+
+.manual-title {
+  font-size: 80px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+
+}
+
+.manual-text {
+  font-size: 24px;
+}
+
+.footer {
+  background-image: url("../images/game_767.jpg");
+}
+
+.footer-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.logo-footer {
+  position: relative;
+  z-index: 1;
+  margin-right: 30px;
+  width: 130px;
+
+  background-color: #6f4fca;
+  border: 25px solid #6f4fcb;
+  border-bottom-width: 20px;
+  border-radius: 30px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer .title-first {
+font-size: 80px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.footer .title-slogan {
+font-size: 30px;
+text-transform: uppercase;
+font-weight: normal;
+  color: #9b8ec1;
+}
+
+.footer .footer-logo-surfase {
+  bottom: 50px;
 }
