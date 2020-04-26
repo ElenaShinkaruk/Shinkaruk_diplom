@@ -111,8 +111,7 @@ svg {
 
 .header__button {
 	  display: flex;
-	justify-content: center;
-	flex-direction: row;
+	
 }
 
 .download__button_app_store {
@@ -196,7 +195,7 @@ section {
 
 .card_sport:nth-child(even) .container-card {
     padding-left: 50px;
-  margin-left: 50%;
+  
 }
 
 .card_sport {
@@ -216,6 +215,11 @@ section {
   color: #e7e7e7;
   text-transform: uppercase;
 }
+
+.card_sport_container:nth-child(even) {
+  padding-left: 50px;
+}
+ 
 
 .card-sport-title::after {
  position: absolute;
@@ -238,6 +242,9 @@ section {
  
 
 .card_sport:nth-child(2) .card-sport-title::after {
+  position: absolute;
+
+  right: 0;
      top: -75px;
 
   width: 1000px;
@@ -332,13 +339,13 @@ section {
 }
 
 .card_manual:nth-child(even) .container_manual {
-  padding-right: 130px;
-  margin-right: 0;
+   margin-right: 0;
 }
 
 .card_manual {
    display: flex;
   justify-content: center;
+
 }
 
 
@@ -351,8 +358,6 @@ section {
 
 .img_card_manual img {
   min-height: 730px;
-
-
   background-color: #f5f4f9;
 
 }
@@ -427,17 +432,24 @@ section {
 }
 
 .footer {
-  background-image: url("../images/game_767.jpg");
+  background-image: url("../images/game_1920.jpg");
+  min-height: 962px;
 }
 
 .footer-container {
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+ 
   align-items: center;
+  justify-content: space-between;
 
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 229px;
+  
+
+}
+.footer-slogan {
+display: flex;
+margin-bottom: 155px;
 }
 
 .logo-footer {
@@ -445,6 +457,7 @@ section {
   z-index: 1;
   margin-right: 30px;
   width: 130px;
+  height: 138px;
 
   background-color: #6f4fca;
   border: 25px solid #6f4fcb;
@@ -473,4 +486,8 @@ font-weight: normal;
 
 .footer .footer-logo-surfase {
   bottom: 50px;
+}
+
+.footer-logo-surfase {
+  margin-top: 260px;
 }
