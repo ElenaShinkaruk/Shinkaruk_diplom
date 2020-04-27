@@ -389,16 +389,20 @@ height: 156px;
   border-radius: 2px;
 }
 
-.container_manual .img_card_manual {
-  width: 50vh;
+.content_manual {
+  width: 50%;
   max-width: 960px;
- display: flex;
+    max-height: 730px;
   padding: 0;
 }
 
 .img_card_manual {
   overflow: hidden;
-  max-height: 731px;
+
+  width: 50%;
+  max-width: 960px;
+    max-height: 730px;
+    padding: 0;
   }
 
 
