@@ -209,6 +209,8 @@ section {
 
 .card-sport-title {
    position: relative;
+   left: 50px;
+   
   margin-bottom: 45px;
 
   font-size: 80px;
@@ -330,7 +332,7 @@ section {
 .card_manual .container_manual {
   display: flex;
   flex-direction: column;
-  max-width: 765px;
+  max-width: 637px;
 }
 
 .card_manual:nth-child(odd) .container_manual {
@@ -340,24 +342,67 @@ section {
 
 .card_manual:nth-child(even) .container_manual {
    margin-right: 0;
+   padding-left: 130px;
 }
 
 .card_manual {
    display: flex;
   justify-content: center;
-
+ position: relative;
 }
 
+.number-card {
+  position: absolute;
+  z-index: 1;
 
-.img_card_manual .content_manual {
-  width: 50%;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+width: 170px;
+height: 156px;
+
+  background-color: #5e42b0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5f6f7;
+}
+
+.number::after {
+  content: "";
+  position: absolute;
+   z-index: 2;
+
+
+  display: block;
+  width: 28px;
+
+  background-color: #8f78c9;
+  border-top: 2px solid #8f78ca;
+  border-bottom: 2px solid #8f78ca;
+  border-radius: 2px;
+}
+
+.container_manual .img_card_manual {
+  width: 50vh;
   max-width: 960px;
-  max-height: 730px;
+ display: flex;
   padding: 0;
 }
 
-.img_card_manual img {
-  min-height: 730px;
+.img_card_manual {
+  overflow: hidden;
+  max-height: 731px;
+  }
+
+
+.img_card_manual img {  
   background-color: #f5f4f9;
 
 }
@@ -373,51 +418,6 @@ section {
   order: 2;
 }
 
-.content_manual::before {
-
- counter-increment: cnt;
-
-  content: counter(cnt, decimal-leading-zero);
-
-  position: absolute;
-  top: 50%;
-  left: -85px;
-  margin-top: -80px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 160px;
-
-  background-color: #5e3db3;
-  font-size: 24px;
-  font-weight: bold;
-  color: #f5f6f7;
-}
-
-.card_manual:nth-child(even) .content_manual::before {
-   left: calc(100% - 85px);
-}
-
-.content_manual::after {
-  content: "";
-  position: absolute;
-  top: calc(50% + 20px);
-  left: -13px;
-
-  display: block;
-  width: 26px;
-
-  background-color: #8f78c9;
-  border-top: 2.5px solid #8f78ca;
-  border-bottom: 2.5px solid #8f78ca;
-  border-radius: 2.5px;
-}
-
-.card_manual:nth-child(even) .content_manual::after {
-  left: calc(100% - 13px);
-}
 
 .manual-title {
   font-size: 80px;
@@ -430,6 +430,7 @@ section {
 .manual-text {
   font-size: 24px;
 }
+
 
 .footer {
   background-image: url("../images/game_1920.jpg");
