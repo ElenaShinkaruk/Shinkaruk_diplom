@@ -52,6 +52,7 @@ svg {
 .header-container {
   width: 94%;
   max-width: 1530px;
+
    margin-left: auto;
   margin-right: auto;
 }
@@ -93,6 +94,7 @@ svg {
   align-items: center;
 
   min-height: 100vh;
+
   padding-top: 4.5vh;
   padding-bottom: 11.5vh;
 }
@@ -159,6 +161,7 @@ text-align: left;
     height: 48px;
     fill: #ffffff;
        position: absolute;
+
      left: 40px;
      top: 10px;
 
@@ -173,7 +176,8 @@ text-align: left;
 
       padding-left: 105px;
     
-       padding-right: : 61px; 
+       padding-right: : 61px;
+
 text-align: left;
       color: #ffffff;
        font-size: 14px;
@@ -191,6 +195,7 @@ background-color: #533a9b;
 .header-button-google {
  position: relative;
 align-items: center;
+
 margin-left: 50px;  
 }
 
@@ -199,6 +204,7 @@ margin-left: 50px;
     height: 50px;
     fill: #ffffff;
        position: absolute;
+
      left: 40px;
      top: 10px;
 
@@ -226,6 +232,7 @@ margin-left: 50px;
 
 .card-sport-title {
    position: relative;
+   
    left: 50px;
    
   margin-bottom: 45px;
