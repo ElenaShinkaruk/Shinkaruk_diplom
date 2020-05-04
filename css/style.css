@@ -215,6 +215,7 @@ margin-left: 50px;
 
 .card-sport:nth-child(odd) .card-sport-title {
       margin-left: 50%;
+      padding-left: 50px;
 }
 
 
@@ -224,14 +225,27 @@ margin-left: 50px;
 }
 
 .card-sport {
-     padding-top: 110px;
+  position: relative;
+     padding-top: 33px;
 }
 
+.img-card-sport-1 {
+position: absolute;
+right: 50%;
 
-.card-sport-title {
-   position: relative;
-   
-      left: 50px;   
+width: 568px;
+
+}
+
+.img-card-sport-2 {
+ position: absolute; 
+ 
+ top: -10px;
+ left: 30%;
+}
+
+.card-sport-title {  
+   padding-left: 50px;  
       margin-bottom: 45px;
 
   font-size: 80px;
@@ -241,39 +255,6 @@ margin-left: 50px;
  
 
 
-.card-sport-title::after {
- position: absolute;
-  z-index: 1;
-     top: -70px;
-
-
-  content: "";
-  display: block;
-  width: 566px;
-  height: 907px;
-
-  background-color: transparent;
-  background-image: url("../images/footballer_566.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 0;
-  transform: translateX(-110%) scale(1.05);
-}
- 
-
-.card-sport:nth-child(even) .card-sport-title::after {
-  position: absolute;
-
-     right: 0;
-     top: -75px;
-
-  width: 1000px;
-  height: 815px;
-
-  background-image: url("../images/basketballer_991.png");
-
-  transform: translateX(-2%) scale(1.05);
-}
 
 .container-service {
    width: 47%;
@@ -303,7 +284,7 @@ margin-left: 50px;
 }
 
 
-.service-card-sport:nth-child(odd) {
+.service-card-sport:nth-child(even) {
   background-color: #f6f4fa;
 }
 
@@ -559,28 +540,112 @@ font-weight: normal;
   background-image: url("../images/football_1280.jpg");
 }
 
+.header-container {
+  max-width: 700px;
+
+}
+
 .welcome-title {
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+  font-size: 64px;
 }
 
-.welcome-title2 {
-  align-self: center;
-  
+.service-title {
+font-size: 32px;
 }
 
- .welcome-title .header-title {
-   font-size: 64px;
-}
-.header-button-app-store {
-  width: calc(50% - 40px);
+.service-content {
+ font-size: 16px;
+
 }
 
+.container-service {
+  width: 60%;
+}
+
+
+.img-card-sport-2 {
+ left: 55%;
+ top: 30px;
+}
+
+.card-sport-title {
+  margin-bottom: 0;
+}
+
+.service-card-sport {
+   padding-top: 45px;
+      padding-bottom: 45px;
+}
 
 .card-sport:nth-child(odd) .container-service {
-      padding-left: 50px;
+            margin-left: 33%;
+}
+
+.card-sport:nth-child(odd) .card-sport-title {
       margin-left: 33%;
 }
 
+
+.content-manual {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+}
+
+.img-card-manual {
+  width: 100%;
+  max-height: 584px;
+}
+
+.card-manual {
+  flex-wrap: wrap;
+}
+
+.card-manual:nth-child(odd) .container-manual {
+  padding-left: 30px;
+}
+
+.card-manual:nth-child(even) .container-manual {
+   padding-right: 0;
+     padding-left: 30px;
+}
+
+.card-manual:nth-child(even) .content-manual{
+  order: 2;
+}
+
+.number-card-manual {
+  width: 117px;
+  height: 117px;
+
+  top: 500px;
+  margin: 0;
+
+left: 30px;
+}
+
+.manual-title {
+margin-bottom: 0px;
+}
+
+.card-manual .container-manual {
+  max-width: calc(100% - 60px);
+}
+
+.footer {
+  background-image: url("../images/game_1280.jpg");
+}
+
+.footer-logo {
+  width: 137px;
+  height: 137px;
+}
+.footer-title {
+  width: calc(100%-60px);
+}
+
+.footer-slogan {
+  flex-wrap: wrap;
+}
 }
