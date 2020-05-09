@@ -1,98 +1,97 @@
 @font-face {
- font-family: OpenSans;
-  src: url(../fonts/OpenSans-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html{
+html {
 
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-  body
-  {
+body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-  }
+}
 
 
 body {
-  min-width: 320px;
+    min-width: 320px;
 
-  font-family: "OpenSans", Arial, sans-serif;
+    font-family: "OpenSans", Arial, sans-serif;
 }
 
 svg {
-  fill: #ffffff;
+    fill: #ffffff;
 }
 
 .header-container {
-  width: 94%;
-  max-width: 1530px;
+    width: 94%;
+    max-width: 1530px;
 
-     margin-left: auto;
-     margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header,
 .footer {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 
-  color: #ffffff;
+    color: #ffffff;
 
-  background-image: url("../images/football_1920.jpg");
-  background-color: #0a0e34;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+    background-image: url("../images/football_1920.jpg");
+    background-color: #0a0e34;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .header::before,
 .footer::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    z-index: -1;
 
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 
-  background-color: #1c1d3f;
-  opacity: 0.9;
+    background-color: #1c1d3f;
+    opacity: 0.9;
 }
 
-.header-container  {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-  min-height: 100vh;
+    min-height: 100vh;
 
     padding-top: 4.5vh;
     padding-bottom: 11.5vh;
@@ -100,59 +99,57 @@ svg {
 
 
 .header-text {
-  width: 200px;
-  }
+    width: 200px;
+}
 
 .header-title {
-  width: 100%;
+    width: 100%;
 }
 
 .welcome-title {
-  font-size: 5.6rem;
-  line-height: 1;
+    font-size: 5.6rem;
+    line-height: 1;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.welcome-title2 {
-  align-self: flex-end;
-  
+.welcome-title-last {
+    align-self: flex-end;
 }
 
 .header-button {
-  display: flex;
-  
+    display: flex;
 }
 
 .header-button-app {
-  position: relative;
-  display: flex;
-  align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header-button-app-store {
-  width: 310px;
-  height: 77px;
-  border: none;
-      background-color: #5e42b0;
-      border-radius: 77px;
+    width: 310px;
+    height: 77px;
+    border: none;
+    background-color: #5e42b0;
+    border-radius: 77px;
 
-      padding-left: 105px;    
-      padding-right: : 61px;
+    padding-left: 105px;
+    padding-right: : 61px;
 
-text-align: left;
+    text-align: left;
 
-color: #ffffff;
-font-size: 0.9rem;
-  text-transform: uppercase;
-  cursor: pointer;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .header-button-app-store:hover {
-  background-color: #533a9b;
+    background-color: #533a9b;
 }
 
 .header-icon-app-store {
@@ -160,42 +157,38 @@ font-size: 0.9rem;
     height: 48px;
     fill: #ffffff;
 
-   position: absolute;
+    position: absolute;
 
-     left: 40px;
-     top: 10px;
-
+    left: 40px;
+    top: 10px;
 }
 
 .header-button-google-play {
-  width: 310px;
-  height: 77px;
-  border: none;
-  background-color: #5e42b0;
-  border-radius: 77px;
+    width: 310px;
+    height: 77px;
+    border: none;
+    background-color: #5e42b0;
+    border-radius: 77px;
 
-      padding-left: 105px;    
-      padding-right: : 61px;
+    padding-left: 105px;
+    padding-right: : 61px;
 
-text-align: left;
-color: #ffffff;
-font-size: 0.9rem;
-  text-transform: uppercase;
-  cursor: pointer;
+    text-align: left;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .header-button-google-play:hover {
-background-color: #533a9b;
-
+    background-color: #533a9b;
 }
 
-
-
 .header-button-google {
- position: relative;
-align-items: center;
+    position: relative;
+    align-items: center;
 
-     margin-left: 50px;  
+    margin-left: 50px;
 }
 
 .header-icon-google-play {
@@ -204,741 +197,713 @@ align-items: center;
     fill: #ffffff;
     position: absolute;
 
-     left: 40px;
-     top: 10px;
-
+    left: 40px;
+    top: 10px;
 }
 
 .card-sport:nth-child(odd) .container-service {
-      padding-left: 50px;
-      margin-left: 50%;
+    padding-left: 50px;
+    margin-left: 50%;
 }
 
 .card-sport:nth-child(odd) .card-sport-title {
-      margin-left: 50%;
-      padding-left: 50px;
+    margin-left: 50%;
+    padding-left: 50px;
 }
 
 
 .card-sport:nth-child(even) .container-service {
-      padding-left: 50px;
-  
+    padding-left: 50px;
 }
 
 .card-sport {
-  position: relative;
+    position: relative;
 
-     padding-top: 33px;
+    padding-top: 33px;
 }
 
-.img-card-sport-1 {
-position: absolute;
-right: 50%;
+.img-card-sport-footballer {
+    position: absolute;
+    right: 50%;
 
-width: 568px;
-
+    width: 568px;
 }
 
-.img-card-sport-2 {
- position: absolute; 
- 
- top: -10px;
- left: 30%;
+.img-card-sport-basketballer {
+    position: absolute;
+
+    top: -10px;
+    left: 450px;
 }
 
-.card-sport-title {  
-      padding-left: 50px;  
-      margin-bottom: 45px;
+.card-sport-title {
+    padding-left: 50px;
+    margin-bottom: 45px;
 
-  font-size: 5rem;
-  color: #e7e7e7;
-  text-transform: uppercase;
+    font-size: 5rem;
+    color: #e7e7e7;
+    text-transform: uppercase;
 }
- 
-
-
 
 .container-service {
-  width: 47%;
-  max-width: 765px;
+    width: 47%;
+    max-width: 765px;
 }
 
 .service-card-sport {
-     padding-top: 55px;
-     padding-bottom: 55px;
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
-.service-card-sport-three {
-      padding-top: 55px;
-      padding-bottom: 55px;
+.service-card-sport-last {
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
-.card-sport:nth-child(odd) .service-card-sport-three {
-  background-color: #5e42b0;
+.card-sport:nth-child(odd) .service-card-sport-last {
+    background-color: #5e42b0;
 }
 
-.card-sport:nth-child(even) .service-card-sport-three {
-  background-color: #0a0e34;
+.card-sport:nth-child(even) .service-card-sport-last {
+    background-color: #0a0e34;
 }
 
-.service-card-sport-three .service-content {
-  color: #ffffff;
+.service-card-sport-last .service-content {
+    color: #ffffff;
 }
-
 
 .service-card-sport:nth-child(even) {
-  background-color: #f6f4fa;
+    background-color: #f6f4fa;
 }
 
 
 .service-card-header {
-  display: flex;
-
+    display: flex;
 }
 
 .service-card-number {
-  position: relative;
+    position: relative;
 
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #000000;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
 }
 
 .service-card-number::after {
- content: "";
- position: absolute;
+    content: "";
+    position: absolute;
 
- display: block;
-  width: 20px;
+    display: block;
+    width: 20px;
 
-   background-color: #8f78c9;
-  border-top: 2px solid #8f78ca;
-  border-bottom: 2px solid #8f78ca;
-  border-radius: 2px;
+    background-color: #8f78c9;
+    border-top: 2px solid #8f78ca;
+    border-bottom: 2px solid #8f78ca;
+    border-radius: 2px;
 }
 
-.service-card-number-three {
-  position: relative;
+.service-card-number-last {
+    position: relative;
 
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
 }
 
-.service-card-number-three::after {
- content: "";
- position: absolute;
- display: block;
+.service-card-number-last::after {
+    content: "";
+    position: absolute;
+    display: block;
 
-  width: 20px;
+    width: 20px;
 
-  background-color: #ffffff;
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  border-radius: 2px;
+    background-color: #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
-.card-sport:nth-child(even) .service-card-number-three {
-  color: #9173e6;
+.card-sport:nth-child(even) .service-card-number-last {
+    color: #9173e6;
 }
 
 .service-title {
-  position: relative;
+    position: relative;
 
-     padding-left: 12px;
-     margin-bottom: 28px;
+    padding-left: 12px;
+    margin-bottom: 28px;
 
-  font-size: 2.25rem;
-  line-height: 1;
-  letter-spacing: 3px;
-  color: #c1c1c1;
-  text-transform: uppercase;
-
+    font-size: 2.25rem;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #c1c1c1;
+    text-transform: uppercase;
 }
 
 .service-content {
- font-size: 1.25rem;
- line-height: 1.75rem; 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
-
 .card-manual .container-manual {
-  display: flex;
-  flex-direction: column;
-  max-width: 637px;
+    display: flex;
+    flex-direction: column;
+    max-width: 637px;
 }
 
 .card-manual:nth-child(odd) .container-manual {
-     padding-left: 130px;
-     margin-left: 0;
-} 
+    padding-left: 130px;
+    margin-left: 0;
+}
 
 .card-manual:nth-child(even) .container-manual {
-     padding-right: 130px;
-     padding-left: 50px;
+    padding-right: 130px;
+    padding-left: 50px;
+  
 }
 
 .card-manual {
-   display: flex;
-  justify-content: center;
- position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .number-card-manual {
-  position: absolute;
-  z-index: 1;
+    position: absolute;
+    z-index: 1;
 
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
-display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-width: 170px;
-height: 156px;
+    width: 170px;
+    height: 156px;
 
-  background-color: #5e42b0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #f5f6f7;
+    background-color: #5e42b0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f5f6f7;
 }
 
 .number-manual::after {
-  content: "";
-  position: absolute;
-   z-index: 2;
+    content: "";
+    position: absolute;
+    z-index: 2;
 
 
-  display: block;
-  width: 28px;
+    display: block;
+    width: 28px;
 
-  background-color: #8f78c9;
-  border-top: 2px solid #8f78ca;
-  border-bottom: 2px solid #8f78ca;
-  border-radius: 2px;
+    background-color: #8f78c9;
+    border-top: 2px solid #8f78ca;
+    border-bottom: 2px solid #8f78ca;
+    border-radius: 2px;
 }
 
 .content-manual {
-  position: relative;
+    position: relative;
 
-  width: 50%;
-  max-width: 960px;
-  max-height: 730px;
-  
-     padding-top: 300px;
-     padding-bottom: 10px;
-  
+    width: 50%;
+    max-width: 960px;
+    max-height: 730px;
+
+    padding-top: 300px;
+    padding-bottom: 10px;
+
 }
 
 .img-card-manual {
-  overflow: hidden;
+    overflow: hidden;
 
-  background-color: #f5f4f9;
+    background-color: #f5f4f9;
 
- width: 50%;
- max-width: 960px;
- max-height: 730px;
+    width: 50%;
+    max-width: 960px;
+    max-height: 730px;
 
-       padding: 0;
-  }
+    padding: 0;
+}
 
 
-.card-manual:nth-child(even) .img-card-manual{
-  order: 2;
+.card-manual:nth-child(even) .img-card-manual {
+    order: 2;
 }
 
 
 .manual-title {
-  font-size: 5rem;
-  font-weight: 5.6rem;
-  color: #c1c1c1;
-  text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 5.6rem;
+    color: #c1c1c1;
+    text-transform: uppercase;
 
-     margin-bottom: 15%;
-
+    margin-bottom: 155px;
 }
 
 .manual-text {
-  font-size: 1.5rem;
-  font-weight: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 1.75rem;
 }
 
 
 .footer {
-  background-image: url("../images/game_1920.jpg");
-  
+    background-image: url("../images/game_1920.jpg");
 }
 
 .footer-container {
-  flex-direction: column;
-  flex-wrap: wrap;
- 
-  align-items: center;
-  justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-     padding-top: 229px; 
+    align-items: center;
+    justify-content: space-between;
 
+    padding-top: 229px;
 }
 
 .footer-slogan {
-display: flex;
-align-items: flex-end;
+    display: flex;
+    align-items: flex-end;
 
 }
 
 .footer-logo {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 
-     margin-right: 30px;
+    margin-right: 30px;
 
-  width: 130px;
-  height: 130px;
+    width: 130px;
+    height: 130px;
 
-  background-color: #6f4fca;
-  border: 25px solid #6f4fcb;
-  border-bottom-width: 20px;
-  border-radius: 30px;
+    background-color: #6f4fca;
+    border: 25px solid #6f4fcb;
+    border-bottom-width: 20px;
+    border-radius: 30px;
 }
 
 .footer-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer .footer-title-first {
-font-size: 5rem;
-font-weight: 700;
-text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .footer .footer-title-slogan {
-font-size: 1.9rem;
-text-transform: uppercase;
+    font-size: 1.9rem;
+    text-transform: uppercase;
 
-  color: #9b8ec1;
+    color: #9b8ec1;
 }
 
 .footer .footer-logo-surfase {
-  bottom: 50px;
+    bottom: 50px;
 }
 
 .footer-container {
- display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-  min-height: 100vh;
+    min-height: 100vh;
 
-     padding-top: 4.5vh;
-     padding-bottom: 11.5vh;  
+    padding-top: 4.5vh;
+    padding-bottom: 11.5vh;
 }
 
 @media screen and (min-width: 641px) and (max-width: 960px) {
-  
-.header {
-  background-image: url("../images/football_1280.jpg");
-}
 
-.header-container {
-  max-width: 700px;
+    .header {
+        background-image: url("../images/football_1280.jpg");
+    }
 
-}
+    .header-container {
+        max-width: 700px;
+    }
 
-.welcome-title {
-  font-size: 4rem;
-}
+    .welcome-title {
+        font-size: 4rem;
+    }
 
-.welcome-title2 {
-  margin-left: 14%;
-}
+    .welcome-title-last {
+        margin-left: 100px;
+    }
 
+    .service-title {
+        font-size: 2rem;
+    }
 
+    .service-content {
+        font-size: 1rem;
+    }
 
-.service-title {
-font-size: 2rem;
-}
+    .container-service {
+        width: 60%;
+    }
 
-.service-content {
- font-size: 1rem;
+    .img-card-sport-footballer {
+        right: 350px;
+        top: 70px;
+    }
 
-}
+    .img-card-sport-basketballer {
+        left: auto;
+        right: 0;
+        top: 30px;
+    }
 
-.container-service {
-  width: 60%;
-}
+    .card-sport-title {
+        margin-bottom: 0;
+    }
 
-.img-card-sport-1 {
-     right: 45%;
-     top: 70px;
-}
+    .service-card-sport {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
 
-.img-card-sport-2 {
-     left: auto;
-     right: 0;
-     top: 30px;
-}
+    .card-sport:nth-child(odd) .container-service {
+        margin-left: 270px;
+    }
 
-.card-sport-title {
-  margin-bottom: 0;
-}
-
-.service-card-sport {
-      padding-top: 45px;
-      padding-bottom: 45px;
-}
-
-.card-sport:nth-child(odd) .container-service {
-      margin-left: 33%;
-}
-
-.card-sport:nth-child(odd) .card-sport-title {
-      margin-left: 33%;
-}
+    .card-sport:nth-child(odd) .card-sport-title {
+        margin-left: 270px;
+    }
 
 
-.content-manual {
-  width: 100%;
+    .content-manual {
+        width: 100%;
 
-     padding-top: 80px;
-     padding-bottom: 100px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
 
-}
+    .img-card-manual {
+        width: 100%;
+        max-height: 584px;
+    }
 
-.img-card-manual {
-  width: 100%;
-  max-height: 584px;
-}
+    .card-manual {
+        flex-wrap: wrap;
+    }
 
-.card-manual {
-  flex-wrap: wrap;
-}
+    .card-manual:nth-child(odd) .container-manual {
+        padding-left: 30px;
+    }
 
-.card-manual:nth-child(odd) .container-manual {
-     padding-left: 30px;
-}
+    .card-manual:nth-child(even) .container-manual {
+        padding-right: 0;
+        padding-left: 30px;
+    }
 
-.card-manual:nth-child(even) .container-manual {
-     padding-right: 0;
-     padding-left: 30px;
-}
+    .card-manual:nth-child(even) .content-manual {
+        order: 2;
+    }
 
-.card-manual:nth-child(even) .content-manual{
-  order: 2;
-}
+    .number-card-manual {
+        width: 117px;
+        height: 117px;
 
-.number-card-manual {
-  width: 117px;
-  height: 117px;
+        top: 500px;
+        margin: 0;
 
-     top: 500px;
-     margin: 0;
+        left: 30px;
+    }
 
-left: 30px;
-}
+    .manual-title {
+        margin-bottom: 0px;
+    }
 
-.manual-title {
-margin-bottom: 0px;
-}
+    .card-manual .container-manual {
+        max-width: calc(100% - 60px);
+    }
 
-.card-manual .container-manual {
-  max-width: calc(100% - 60px);
-}
+    .footer {
+        background-image: url("../images/game_1280.jpg");
+    }
 
-.footer {
-  background-image: url("../images/game_1280.jpg");
-}
+    .footer-logo {
+        width: 137px;
+        height: 137px;
+    }
 
-.footer-logo {
-  width: 137px;
-  height: 137px;
-}
-.footer-title {
-  width: 100%;
-  align-items: center;
+    .footer-title {
+        width: 100%;
+        align-items: center;
 
-     margin-top: 10%;
+        margin-top: 100px;
+    }
 
-}
+    .footer-slogan {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
 
-.footer-slogan {
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+        margin-top: 100px;
+    }
 
-     margin-top: 10%;
-}
+    .footer-logo {
+        margin-right: 0;
+    }
 
-.footer-logo {
-  margin-right: 0;
-}
-
-.footer-container {
-  padding-bottom: 2vh;
-}
+    .footer-container {
+        padding-bottom: 2vh;
+    }
 
 }
 
 @media screen and (max-width: 640px) {
 
-.header {
-  background-image: url("../images/football_767.jpg");
-}
+    .header {
+        background-image: url("../images/football_767.jpg");
+    }
 
-.header-container {
-  max-width: 100%;
+    .header-container {
+        max-width: 100%;
 
-}
+    }
 
-.header-text {
-  width: 134px;
-}
+    .header-text {
+        width: 134px;
+    }
 
-.welcome-title {
-  font-size: 1.75rem;
-}
+    .welcome-title {
+        font-size: 1.75rem;
+    }
 
-.header-button {
-justify-content: center;
-  flex-wrap: wrap;
+    .header-button {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header-button-app-store {
+        height: 35px;
+        font-size: 0.5rem;
+
+        padding-left: 112px;
+    }
 
-}
+    .header-icon-app-store {
+        width: 20px;
+
+        top: -10px;
+        left: 80px;
+    }
+
+    .header-button-google {
+        margin-left: 0;
+    }
+
+    .header-button-google-play {
+        height: 35px;
+        font-size: 0.5rem;
+
+        padding-left: 112px;
+        margin-top: 15px;
+    }
+
+    .header-icon-google-play {
+        width: 22px;
+
+        top: 8px;
+        left: 80px;
+    }
+
+    .welcome-title-last {
+        margin-left: 45px;
+        margin-top: 32px;
+    }
+
+    .service-card-sport:nth-child(odd) {
+        background-color: #fafafa;
+    }
+
+    .service-title {
+        font-size: 1.4rem;
+    }
+
+    .service-content {
+        font-size: 0.9rem;
+        line-height: 1.125rem;
+    }
+
+    .container-service {
+        width: 100%;
+    }
+
+    .img-card-sport-footballer {
+        left: 75px;
+        top: 70px;
+    }
+
+
+    .img-card-sport-basketballer {
+        left: 15px;
+        right: auto;
+        top: 70px;
+    }
+
+    .card-sport-title {
+        font-size: 3.125rem;
+
+        margin-bottom: 230px;
+        padding-left: 20px;
+    }
+
+    .service-card-sport {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .card-sport {
+        padding-top: 0;
+    }
+
+    .card-sport:nth-child(odd) .container-service {
+        margin-left: 0;
+    }
+
+    .card-sport:nth-child(odd) .card-sport-title {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .card-sport:nth-child(even) .container-service {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-sport:nth-child(odd) .container-service {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-.header-button-app-store {
-  height: 35px;
-  font-size: 0.5rem;
+    .service-card-number {
+        font-size: 0.875rem;
+    }
 
-     padding-left: 112px;
-}
+    .service-card-number::after {
+        width: 18px;
+    }
+
+    .service-card-number-last {
+        font-size: 0.875rem;
+    }
 
-.header-icon-app-store {
-  width: 20px;
+    .service-card-number-last::after {
+        width: 18px;
+    }
 
-     top: -10px;
-     left: 80px;
-}
-
-.header-button-google {
-      margin-left: 0;
-}
-
-.header-button-google-play {
-   height: 35px;
-  font-size: 0.5rem;
-
-     padding-left: 112px;
-     margin-top: 15px;
-}
-
-.header-icon-google-play {
-  width: 22px;
-
-     top: 8px;
-     left: 80px;
-}
-
-.welcome-title2 {
-     margin-left: 14%;
-     margin-top: 32px;
-}
-
-.service-card-sport:nth-child(odd) {
-  background-color: #fafafa;
-}
-
-.service-title {
-font-size: 1.4rem;
-}
-
-.service-content {
- font-size: 0.9rem;
- line-height: 1.125rem;
-}
-
-.container-service {
-  width: 100%;
-}
-
-.img-card-sport-1 {
-   
-     left: 25%;
-     top: 70px;
-}
-
-
-.img-card-sport-2 {
-       left: 5%;
-     right: auto;
-     top: 70px;
-}
-
-.card-sport-title {
-  font-size: 3.125rem;
-
-     margin-bottom: 70%;
-     padding-left: 20px;
-
-}
-
-.service-card-sport {
-      padding-top: 45px;
-      padding-bottom: 45px;
-}
-
-.card-sport {
-  padding-top: 0;
-}
-
-.card-sport:nth-child(odd) .container-service {
-     margin-left: 0;
-}
-
-.card-sport:nth-child(odd) .card-sport-title {
-      margin-left: 0;
-      padding-left: 20px;
-}
-
-.card-sport:nth-child(even) .container-service {
-     padding-left: 20px;
-     padding-right: 20px;
-}
-
-
-
-.card-sport:nth-child(odd) .container-service {
-     padding-left: 20px;
-     padding-right: 20px;
-}
-
-
-
-.service-card-number {
-  font-size: 0.875rem;
-}
-
-.service-card-number::after {
-  width: 18px;
-}
-
-.service-card-number-three {
-  font-size: 0.875rem;
-}
-
-.service-card-number-three::after {
-  width: 18px;
-}
-
-.content-manual {
-  width: 100%;
-     padding-top: 40px;
-     padding-bottom: 80px;
-
-}
-
-.img-card-manual {
-  width: 100%;
-  max-width: 640px;
-  max-height: 350px;  
-
-}
-
-.card-manual {
-  flex-wrap: wrap;
-}
-
-.card-manual:nth-child(odd) .container-manual {
-     padding-left: 20px;
-}
-
-.card-manual:nth-child(even) .container-manual {
-     padding-right: 0;
-     padding-left: 20px;
-}
-
-.card-manual:nth-child(even) .content-manual{
-  order: 2;
-}
-
-.number-card-manual {
-  width: 70px;
-  height: 70px;
-
-  font-size: 0.875rem;
-
-     top: 300px;
-     margin: 0;
-     left: 20px;
-}
-
-.number-manual::after {
-  width: 16px;
-}
-
-.manual-title {
-     margin-bottom: 0px;
-
-font-size: 1.75rem;
-}
-
-.manual-text {
-  font-size: 1rem;
-}
-
-.card-manual .container-manual {
-  max-width: calc(100% - 60px);
-}
-
-.footer {
-  background-image: url("../images/game_767.jpg");
-}
-
-.footer-logo {
-  width: 100px;
-  height: 100px;
-  
-    border: 12px solid #6f4fcb;
-  border-bottom-width: 20px;
-    border-radius: 10px;
-  }
-
-
-.footer-title {
-  width: 100%;
-  align-items: center;
-
-     margin-top: 10%;
-
-}
-
-.footer .footer-title-first {
-  font-size: 2rem;
-}
-
-.footer .footer-title-slogan {
-  font-size: 0.875rem;
-}
-
-.footer-slogan {
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-
-     margin-top: 10%;
-}
-
-.footer-logo {
-     margin-right: 0;
-}
-
-.footer-container {
-     padding-bottom: 2vh;
-}
-
+    .content-manual {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .img-card-manual {
+        width: 100%;
+        max-width: 640px;
+        max-height: 350px;
+    }
+
+    .card-manual {
+        flex-wrap: wrap;
+    }
+
+    .card-manual:nth-child(odd) .container-manual {
+        padding-left: 20px;
+    }
+
+    .card-manual:nth-child(even) .container-manual {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+    .card-manual:nth-child(even) .content-manual {
+        order: 2;
+    }
+
+    .number-card-manual {
+        width: 70px;
+        height: 70px;
+
+        font-size: 0.875rem;
+
+        top: 300px;
+        margin: 0;
+        left: 20px;
+    }
+
+    .number-manual::after {
+        width: 16px;
+    }
+
+    .manual-title {
+        margin-bottom: 0px;
+
+        font-size: 1.75rem;
+    }
+
+    .manual-text {
+        font-size: 1rem;
+    }
+
+    .card-manual .container-manual {
+        max-width: calc(100% - 60px);
+    }
+
+    .footer {
+        background-image: url("../images/game_767.jpg");
+    }
+
+    .footer-logo {
+        width: 100px;
+        height: 100px;
+
+        border: 12px solid #6f4fcb;
+        border-bottom-width: 20px;
+        border-radius: 10px;
+    }
+
+
+    .footer-title {
+        width: 100%;
+        align-items: center;
+
+        margin-top: 100px;
+    }
+
+    .footer .footer-title-first {
+        font-size: 2rem;
+    }
+
+    .footer .footer-title-slogan {
+        font-size: 0.875rem;
+    }
+
+    .footer-slogan {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 10px;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+
+    .footer-container {
+        padding-bottom: 2vh;
+    }
 
 }
